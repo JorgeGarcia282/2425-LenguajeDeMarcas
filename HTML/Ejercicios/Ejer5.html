@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Informacion sobre el producto</h2><br><br>
+    
+    <form action="/submit" method="post">
+        <Fieldset>
+           <legend>Datos basicos</legend>
+           <label for="nombre">Nombre</label><br>
+           <input type="text" name="nombre"><br><br>
+           <label for="descripción">descripción</label><br>
+           <textarea type="textarea" name="descripción"></textarea><br><br>
+           foto <input type="file"><br><br>
+           <input type="checkbox"> Añadir contador de visitas<br><br>
+        </Fieldset>
+        <fieldset>
+            <legend>Datos economicos</legend>
+            <label for="precio">Precio</label><input type="number" name="precio" >€ &nbsp;&nbsp;&nbsp;&nbsp;    
+            <label for="impuestos">Impuestos</label> <select id="impuestos" name="impuestos">
+                <option value="4%">4%</option>
+                <option value="10%">10%</option>
+                <option value="21%">21%</option>
+            </select><br><br>
+            <label for="promocion">Promoción</label><br>
+            <p><input type="radio">Ninguno</p>
+            <p><input type="radio">Transporte gratuito</p>
+            <p><input type="radio">Descuento 5%</p>
+        </fieldset>
+    </form>       
+</body>
+</html>
